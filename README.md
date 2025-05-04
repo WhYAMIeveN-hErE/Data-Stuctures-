@@ -270,3 +270,212 @@ B. Write a separate C++ menu-driven program to implement Tree ADT using a charac
 6. Exit 
  
 What is the time complexity of each of the operations? (K4) 
+
+
+
+LAB 9
+A. Utilize C++ STL to solve the following (K5),
+
+Nene invented a new game based on an increasing sequence of integers a 
+1
+​
+ ,a 
+2
+​
+ ,...,a 
+k
+​
+ .
+
+In this game, initially n players are lined up in a row. In each of the rounds of this game, the following happens:
+
+Nene finds the a 
+1
+​
+ -th, a 
+2
+​
+ -th,...,a 
+k
+​
+ -th players in a row. They are kicked out of the game simultaneously. If the i-th player in a row should be kicked out, but there are fewer than i players in a row, they are skipped.
+Once no one is kicked out of the game in some round, all the players that are still in the game are declared as winners.
+
+For example, consider the game with a=[3,5] and n=5 players. Let the players be named player A, player B, ..., player E in the order they are lined up initially. Then,
+
+Before the first round, players are lined up as ABCDE. Nene finds the 3-rd and the 5-th players in a row. These are players C and E. They are kicked out in the first round.
+Now players are lined up as ABD. Nene finds the 3-rd and the 5-th players in a row. The 3-rd player is player D and there is no 5-th player in a row. Thus, only player D is kicked out in the second round.
+In the third round, no one is kicked out of the game, so the game ends after this round.
+Players A and B are declared as the winners.
+Nene has not yet decided how many people would join the game initially. Nene gave you q integers n 
+1
+​
+ ,n 
+2
+​
+ ,...,n 
+q
+​
+B.
+There are n participants in a competition, participant i having a strength of s 
+i
+​
+ .
+
+Every participant wonders how much of an advantage they have over the other best participant. In other words, each participant i wants to know the difference between s 
+i
+​
+  and s 
+j
+​
+ , where j is the strongest participant in the competition, not counting i (a difference can be negative).   
+
+So, they ask you for your help! For each i (1≤i≤n) output the difference between s 
+i
+​
+  and the maximum strength of any participant other than participant i.   
+
+
+
+
+C. Write a separate C++ menu-driven program to implement Tree ADT using a binary search tree. Maintain proper boundary conditions and follow good coding practices. The Tree ADT has the following operations, 
+ 
+1. Insert 
+2. Preorder 
+3. Inorder 
+4. Postorder 
+5. Search 
+6. Exit 
+ 
+What is the time complexity of each of the operations? (K4) 
+
+D. Add a "construct expression tree" method to the binary tree data structure from the previous lab code—import stack from the standard template library (STL) to construct the expression tree. Import the Tree ADT program into another program that gets a valid postfix expression, constructs, and prints the expression tree. It consists of the following operations. 
+ 
+1. Postfix Expression 
+2. Construct Expression Tree 
+3. Preorder 
+4. Inorder 
+5. Postorder 
+6. Exit 
+ 
+What is the time complexity of each of the operations? (K4) 
+
+
+
+
+LAB 10
+A. Utilize C++ STL if needed. Write a C++ program to solve the following, 
+
+
+Polycarp was presented with some sequence of integers a of length n (1 <= a_i <= n). A sequence can make Polycarp happy only if it consists of different numbers (i.e. distinct numbers).
+
+In order to make his sequence like this, Polycarp is going to make some (possibly zero) number of moves.
+In one move, he can:
+
+* remove the first (leftmost) element of the sequence.
+
+For example, in one move, the sequence [3, 1, 4, 3] will produce the sequence [1, 4, 3], which consists of different numbers.
+
+Determine the minimum number of moves he needs to make so that in the remaining sequence all elements are different. In other words, find the length of the smallest prefix of the given sequence $a$, after removing which all values in the sequence will be unique.
+
+B. Utilize C++ STL if needed. Write a C++ program to solve the following, 
+
+Three guys play a game: first, each person writes down n
+ distinct words of length 3
+. Then, they total up the number of points as follows:
+
+if a word was written by one person — that person gets 3 points,
+if a word was written by two people — each of the two gets 1 point,
+if a word was written by all — nobody gets any points.
+In the end, how many points does each player have?
+Input
+The input consists of multiple test cases. The first line contains an integer t
+ (1≤t≤100
+) — the number of test cases. The description of the test cases follows.
+
+The first line of each test case contains an integer n
+ (1≤n≤1000
+) — the number of words written by each person.
+
+The following three lines each contain n
+ distinct strings — the words written by each person. Each string consists of 3
+ lowercase English characters.
+
+Output
+For each test case, output three space-separated integers — the number of points each of the three guys earned. You should output the answers in the same order as the input; the i
+-th integer should be the number of points earned by the i
+-th guy.
+
+C. Write a separate C++ menu-driven program to implement Priority Queue ADT using a max heap. Maintain proper boundary conditions and follow good coding practices. The Priority Queue ADT has the following operations, 
+ 
+1. Insert 
+2. Delete 
+3. Display 
+4. Search 
+5. Sort (Heap Sort)  
+6. Exit 
+
+What is the time complexity of each of the operations? (K4) 
+
+
+LAB 11
+A. Write a separate C++ menu-driven program to implement Hash ADT with Linear Probing. Maintain proper boundary conditions and follow good coding practices. The Hash ADT has the following operations,
+
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+What is the time complexity of each of the operations? (K4)
+
+B. Write a separate C++ menu-driven program to implement Hash ADT with Quadratic Probing. Maintain proper boundary conditions and follow good coding practices. The Hash ADT has the following operations,
+
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+What is the time complexity of each of the operations? (K4)
+
+C. Write a separate C++ menu-driven program to implement Hash ADT with Separate Chaining. Maintain proper boundary conditions and follow good coding practices. The Hash ADT has the following operations,
+
+1. Insert
+2. Delete
+3. Search
+4. Exit
+
+What is the time complexity of each of the operations? (K4)
+
+
+
+LAB 12
+A. Write a separate C++ menu-driven program to implement Graph ADT with an adjacency matrix. Maintain proper boundary conditions and follow good coding practices. The Graph ADT has the following operations,
+
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+What is the time complexity of each of the operations? (K4)
+
+B. Write a separate C++ menu-driven program to implement Graph ADT with an adjacency list. Maintain proper boundary conditions and follow good coding practices. The Graph ADT has the following operations,
+
+1. Insert
+2. Delete
+3. Search
+4. Display
+5. Exit
+
+What is the time complexity of each of the operations? (K4)
+
+C. Write a separate C++ menu-driven program to implement Graph ADT with the implementation for Prim’s algorithm, Kruskal’s algorithm, and Dijkstra’s algorithm. Maintain proper boundary conditions and follow good coding practices. (K3)
+
+
+
+
+
+
+  
