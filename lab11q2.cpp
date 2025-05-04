@@ -1,9 +1,8 @@
 #include <iostream>
-#include <vector>
 
 class HashTable {
 private:
-    std::vector<int> table;
+    int* table;
     int capacity;
     int size;
 
@@ -13,7 +12,14 @@ private:
 
 public:
     HashTable(int cap) : capacity(cap), size(0) {
-        table.resize(capacity, -1); // Initialize the table with -1 (indicating empty slots)
+        table = new int[capacity];
+        for (int i = 0; i < capacity; i++) {
+            table[i] = -1; // Initialize the table with -1 (indicating empty slots)
+        }
+    }
+
+    ~HashTable() {
+        delete[] table;
     }
 
     void insert(int key) {
